@@ -4,7 +4,7 @@ A robust and secure Back-End Reservation and Ordering API built using **Django**
 
 ---
 
-## 🛠️ Tech Stack & Tools
+##  Tech Stack & Tools
 
 - **Backend Framework:** Python 3.x / Django / Django REST Framework (DRF)
 - **Database Management:** MySQL (Integrated via DBeaver)
@@ -14,7 +14,7 @@ A robust and secure Back-End Reservation and Ordering API built using **Django**
 
 ---
 
-## 🚀 Core Features
+##  Core Features
 
 - **User Authentication:** Complete user registration, token generation, and secure login/logout functionalities.
 - **Role-Based Access Control (RBAC):** Distinct permissions tailored for **Managers**, **Delivery Crew**, and **Customers**.
@@ -25,7 +25,7 @@ A robust and secure Back-End Reservation and Ordering API built using **Django**
 
 ---
 
-## 🗺️ API Endpoints Architecture
+##  API Endpoints Architecture
 
 ### 1. Authentication & User Management (Handled via Djoser)
 | Endpoint | Method | Allowed Roles | Purpose |
@@ -66,7 +66,7 @@ A robust and secure Back-End Reservation and Ordering API built using **Django**
 
 ---
 
-## 💻 Installation & Local Setup
+##  Installation & Local Setup
 
 Follow these steps to spin up the API server locally:
 
