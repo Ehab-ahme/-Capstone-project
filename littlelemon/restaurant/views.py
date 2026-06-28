@@ -68,7 +68,7 @@ class OrderView(generics.ListCreateAPIView):
         # The other sttaf (Admin, managers)
         else:
             return Order.objects.all()
-    #Create a new order when a user sends a request.
+    #Create a new order when the user sends a request.
     def create(self, request, *args, **kwargs):
         user= self.request.user
         #Counting how many items belong to the user in the cart
@@ -122,7 +122,7 @@ class SingleOrderView(generics.RetrieveUpdateAPIView):
 class GroupViewSets(viewsets.ViewSet):
     permission_classes= [IsAdminUser]
     def list(self, request): # fetch Managers from the DB, so must use serializers
-        users= User.objects.all().filter(groups__name='Manager') # two underscores it’s a way to look "through" relationships between database tables. See Explaination.md 37
+        users= User.objects.all().filter(groups__name='Manager') # two underscores it’s a way to look "through" relationships between database tables.
         serialized_users= UserSerializer(users, many= True)
         return Response(serialized_users.data)
     
